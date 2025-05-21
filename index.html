@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+    <div class="main-body">
+        <div class="left-panel">
+            <div class="search-panel">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" name="search" placeholder="Search for places ...">
+            </div>
+            <div class="condition-image">
+                <div id="condition"></div>
+            </div>
+            <div class="temprature"></div>
+            <div class="date-time">
+                <div class="date"></div>
+                <div class="time"></div>
+            </div>
+            <div class="separation">
+                <div id="separation-line"></div>
+            </div>
+            <div class="weather-information">
+                <div class="information"></div>
+            </div>
+            <div class="city-image"></div>
+        </div>
+        <div class="right-panel">
+            <div class="top-nav-bar">
+                <div class="weekly-daily">
+                    <a href="#">Today</a>
+                </div>
+                <div class="centigrade-ferenheit-converter">
+                    <div class="Centigrade">°C</div>
+                    <div class="Ferenheit">°F</div>
+                    <div class="profile"></div>
+                </div>
+            </div>
+            <h3>Today's Highlights</h3>
+            <div class="weather-details">
+                <div class="feels-like box">
+                    <div class="heading">Feels Like</div>
+                    <div class="value"></div>
+                    <div class="description"></div>
+                </div>
+                <div class="pressure box">
+                    <div class="heading">Pressure</div>
+                    <div class="value"></div>
+                    <div class="description"></div>
+                </div>
+                <div class="wind-status box">
+                    <div class="heading">Wind Status</div>
+                    <div class="value"></div>
+                    <div class="description"></div>
+                </div>
+                <div class="sun-rise-sun-set box">
+                    <div class="heading">Sunrise & Sunset</div>
+                    <div class="sun-rise">
+                        <img src="sunrise.png" alt="sunrise">
+                        <div class="time"></div>
+                    </div>
+                    <div class="sun-set">
+                        <img src="sunset.png" alt="sunset">
+                        <div class="time"></div>
+                    </div>
+                </div>
+                <div class="humidity box">
+                    <div class="heading">Humidity</div>
+                    <div class="value"></div>
+                    <div class="description"></div>
+                </div>
+                <div class="visibility box">
+                    <div class="heading">Visibility</div>
+                    <div class="value"></div>
+                    <div class="description"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
